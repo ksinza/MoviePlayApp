@@ -1,4 +1,5 @@
 ﻿using System;
+using VideoAppPlayer.View;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace VideoAppPlayer
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new WatchListPage());
         }
 
         protected override void OnStart()
